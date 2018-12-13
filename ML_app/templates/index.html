@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <title>Income Classification</title>
+     <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+    margin: auto;
+    align-content: center;
+    background-color: lightblue;
+}
+</style>
+  </head>
+<body>
+  <div class="container">
+    <div class="jumbotron text-center">
+      <h1>Will you make over 50K or under 50K</h1>
+    </div>
+    <br>
+<div class="text-center">
+    <form action="/results" method="POST">
+        <label style= "color:darkblue " for="sex"><h2>Gender<h2></label>
+        <select id="sex" name="sex">
+          <option value="0" selected="selected">male</option>
+          <option value="1" selected="selected">female</option>
+        </select>
+      <br>
+      <br>
+        <label style= "color:darkblue "  for="marital-status"><h2>Select Your Marital Status</h2></label>
+        <select id="marital-status" name="marital-status">
+          <option value="0" selected="selected">Married-spouse-absent</option>
+          <option value="1" selected="selected">Widowed</option>
+          <option value="2" selected="selected">Married-civ-spouse</option>
+          <option value="3" selected="selected">Separated</option>
+          <option value="4" selected="selected">Divorced</option>
+          <option value="5" selected="selected">Never-married</option>
+          <option value="6" selected="selected">Married-AF-spouse</option>
+      </select>
+      <br>
+      <br>
+        <label style= "color:darkblue " for="education_num"><h2>Enter your highest level of education achieved in numerical form</h2></label>
+        <input type= "text" id="education-num" name="education-num" />
+      <br>
+      <br>
+        <label style= "color:darkblue " for="age"><h2>Enter Age, must be over 18</label></h2>
+        <input type= "text" id="age" name="age" />
+      <br>
+      <br>
+          <input type="submit" class="get prediction" value="Get Prediction" />
+    </form>
+  </div>
+</div>
+  </body>
+</html>

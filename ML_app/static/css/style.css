@@ -1,0 +1,28 @@
+body{
+    margin: auto;
+    align-content: center;
+    background-color: lightblue;
+}
+
+#button{
+    padding-top: 20px;
+}
+
+input {
+  width: 100%;
+  align-content: center;
+}
+
+select {
+   width: 100%;
+   align-content: center;
+}
+
+form {
+   width: 100%;
+   align-content: center;
+}
+
+label{
+    font-size: 40px;
+}
